@@ -1,0 +1,27 @@
+<div class="register">
+  <form class="custom-form">
+    <h1>Register</h1>
+    <input
+      type="email"
+      [(ngModel)]="email"
+      name="email"
+      placeholder="Email"
+      required="required"
+    />
+    <input
+      type="password"
+      [ngModel]="password"
+      name="password"
+      placeholder="Password"
+      required="required"
+    />
+    <input
+      type="password"
+      [(ngModel)]="confirmPassword"
+      name="password"
+      placeholder="confirmPassword"
+      required="required"
+    />
+    <button (click)="register()" type="submit">Register</button>
+  </form>
+</div>
